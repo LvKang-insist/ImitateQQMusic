@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_tab_child"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/home_tab_child_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/home_tab_child_image"
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/home_tab_child_image">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/home_table_child_songList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新建歌单"
+                android:textColor="@color/smssdk_black"
+                android:paddingRight="30sp"
+                android:textSize="15dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center"
+            android:text="@string/右箭头"
+            android:textSize="18sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

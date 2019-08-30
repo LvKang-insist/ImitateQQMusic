@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="frame" />            // 数据库名称为frame，默认以 .db 结尾,如未以此结尾,则自动添加。
+    <version value="1" />                     // 数据库版本为1,每次数据库发生变动版本号必须+1
+    <list>                                    // 有几张表就在list之间写几个mapping
+        // list标签中的实体类都应该继承LitePalSupport这个类,这个千万别忘记，实体类里面不能包含如List类型的字段，否则会报错
+        <mapping class="com.admin.work.main.player.nativemusic.Song"> </mapping>
+        <mapping class="com.admin.work.main.home.icon_recently.RecentlySong"> </mapping>
+        <mapping class="com.admin.work.main.home.icon_love.LoveSong"> </mapping>
+    </list>
+    <!--<storage value="gpf/database" />  //storage 定义数据库文件存储的地方,可选 internal(内部) 和 external（外部）, 默认为 internal-->
+</litepal>

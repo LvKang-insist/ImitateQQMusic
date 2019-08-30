@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/item_more_relativeOne"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        tools:ignore="UselessParent"
+        android:layout_marginStart="20dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/item_more_pthotoOne"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_more_nameOne"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/item_more_pthotoOne"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/item_more_pthotoOne"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/smssdk_black"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_more_contentOne"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/item_more_nameOne"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/item_more_pthotoOne"
+            android:layout_toRightOf="@id/item_more_pthotoOne"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/smssdk_black"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_more_relativeTwo"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:ignore="UselessParent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/item_more_pthotoTwo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_more_nameTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/item_more_pthotoTwo"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/item_more_pthotoTwo"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/smssdk_black"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_more_contentTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/item_more_nameTwo"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/item_more_pthotoTwo"
+            android:layout_toRightOf="@id/item_more_pthotoTwo"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/smssdk_black"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

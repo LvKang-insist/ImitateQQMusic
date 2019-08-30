@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="qq">{fa-qq}</string>
+    <string name="SMS">{music-SMS}</string>
+    <string name="phone_number">手机号</string>
+    <string name="home_list">{home-List}</string>
+    <string name="喜欢">{home-love}</string>
+    <string name="最近">{home-recently}</string>
+    <string name="本地">{home-native}</string>
+    <string name="已购">{home-bought}</string>
+    <string name="关注">{home-Attention}</string>
+    <string name="sort">智能分类</string>
+    <string name="省略">{home-omit}</string>
+    <string name="省略号">…</string>
+    <string name="多选">{home-tab-select}</string>
+    <string name="添加">{home-tab-add}</string>
+    <string name="右箭头">{home-tab-right}</string>
+    <string name="评论">{discover-tab-comment}</string>
+    <string name="more">更多</string>
+    <string name="独家">{music-exclusive}</string>
+    <string name="sq">{music-sq}</string>
+    <string name="分类">{more-sort}</string>
+    <string name="视频">{music-video}</string>
+    <string name="hq">{music-hq}</string>
+    <string name="音效">{music-sound-effect}</string>
+    <string name="mv">{music-mv}</string>
+    <string name="line">{music-line}</string>
+    <string name="author">作者</string>
+    <string name="更多">{music-more}</string>
+    <string name="dialog_play_below">{dialog-play-below}</string>
+    <string name="dialog_dowload">{dialog-dowload}</string>
+    <string name="paly_share">{paly-share}</string>
+    <string name="home_delete">{home-delete}</string>
+    <string name="more_singer">{more-singer}</string>
+    <string name="music_video">{music-video}</string>
+    <string name="dialog_album">{dialog-album}</string>
+    <string name="dialog_songmessage">{dialog-songMessage}</string>
+
+</resources>

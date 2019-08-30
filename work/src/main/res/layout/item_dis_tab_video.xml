@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_dis_tab_video_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_dis_tab_video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/smssdk_black"
+            android:textSize="17sp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/item_dis_tab_video_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="100"
+        android:maxLines="2"
+        android:singleLine="true"
+        android:textColor="@color/smssdk_black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <cn.jzvd.JzvdStd
+            android:id="@+id/item_dis_tab_video_jz"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="# 独家原创"
+            android:textColor="@color/smssdk_black"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/item_dis_tab_video_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp"
+            android:text="@string/省略号"
+            android:textSize="25dp" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/item_dis_tab_video_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@id/item_dis_tab_video_more"
+            android:layout_toLeftOf="@id/item_dis_tab_video_more"
+            android:text="点赞"
+            android:textSize="20sp" />
+
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/item_dis_tab_video_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@id/item_dis_tab_video_praise"
+            android:layout_toLeftOf="@id/item_dis_tab_video_praise"
+            android:gravity="center_vertical"
+            android:text="@string/评论"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

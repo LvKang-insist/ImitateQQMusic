@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <androidx.appcompat.widget.AppCompatTextView
+           android:id="@+id/item_recycler_name"
+           android:layout_width="wrap_content"
+           android:layout_height="50dp"
+           android:gravity="center_vertical"
+           android:textStyle="bold"
+           android:textSize="20sp"
+           android:textColor="@color/smssdk_black" />
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:id="@+id/item_recycler_more"
+           android:layout_width="wrap_content"
+           android:layout_height="50dp"
+           android:layout_alignParentRight="true"
+           android:paddingRight="20dp"
+           android:layout_alignParentEnd="true"
+           tools:ignore="RtlHardcoded,RtlSymmetry"
+           android:visibility="gone">
+           <androidx.appcompat.widget.AppCompatTextView
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:gravity="center_vertical"
+               android:textSize="15sp"
+               android:textColor="@color/smssdk_black"
+               android:text="@string/more"/>
+           <com.joanzapata.iconify.widget.IconTextView
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:gravity="center_vertical"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/smssdk_black"
+               android:layout_marginBottom="5dp"
+               android:textSize="13sp"
+               android:text="@string/右箭头"/>
+       </androidx.appcompat.widget.LinearLayoutCompat>
+   </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

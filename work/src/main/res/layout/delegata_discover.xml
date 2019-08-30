@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F9F9F9">
+
+            <!--可折叠式标题栏 ，不能独立存在，只能作为 AppBarLayout 的直接子布局来使用-->
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:statusBarScrim="@android:color/transparent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/discover_viewpager_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_gravity="center"
+                        android:clipToPadding="false"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp" />
+
+                    <!--<com.google.android.material.circularreveal.CircularRevealFrameLayout-->
+                    <!--android:id="@+id/frame_goods_info"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_below="@id/discover_viewpager_banner" />-->
+                </RelativeLayout>
+
+                <!--Toolbar 要放在下面-->
+                <include layout="@layout/delegate_toolbar" />
+
+                <!--如果将TabLayout 写在这里，将会透明-->
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/discover_tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                app:tabIndicatorFullWidth="false"
+                app:tabPaddingBottom="-15dp"
+                app:tabRippleColor="@android:color/transparent"
+                app:tabTextAppearance="@style/MyTabText" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <com.admin.core.ui.view.ForbidSlideViewPager
+            android:id="@+id/discover_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

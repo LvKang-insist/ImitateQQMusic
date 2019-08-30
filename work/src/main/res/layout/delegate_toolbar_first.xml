@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolar_first_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/delegate_first_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="2">
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/toolbar_first_back"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="{music-break}"
+                    android:textColor="@color/smssdk_black"
+                    android:textSize="20sp"
+                    android:layout_marginStart="5dp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/toolbar_first_textview"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:layout_weight="7"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/smssdk_black"
+                android:textSize="20sp" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/toolbar_first_more"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="{music-more}"
+                android:textColor="@color/smssdk_black"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+</LinearLayout>

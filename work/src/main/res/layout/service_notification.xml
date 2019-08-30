@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/notification_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="fitXY"
+            tools:src="@mipmap/launcher_00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/notification_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="名字"
+                android:textColor="@color/smssdk_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/notification_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/notification_name"
+                tools:text="作者"
+                android:textColor="@color/smssdk_black"
+                android:textSize="12sp"
+                android:layout_toEndOf="@id/notification_name" />
+
+            <ImageView
+                android:id="@+id/notification_stop"
+                android:layout_width="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/stop"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+          >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/notification_love"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/love"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/notification_up"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/up"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/notification_pause"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/pause"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp">
+
+                <ImageView
+                    android:id="@+id/notification_below"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/below"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--AutoPhotoLayout-->
+    <declare-styleable name="camera_flow_layout">
+        <attr name="max_count" format="integer" />
+        <attr name="item_margin" format="integer" />
+        <attr name="line_count" format="integer" />
+        <attr name="icon_size" format="dimension" />
+    </declare-styleable>
+
+    <!--音乐图片的旋转图片-->
+    <declare-styleable name="music_photo">
+        <attr name="src" format="reference"/>
+    </declare-styleable>
+
+
+        <declare-styleable name="LrcView">
+            <attr name="lrcMode" format="enum">
+                <enum name="KARAOKE" value="1"/>
+            </attr>
+            <attr name="hignLineColor" format="color|reference"/>
+            <attr name="lrcColor" format="color|reference"/>
+        </declare-styleable>
+
+</resources>

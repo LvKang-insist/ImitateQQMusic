@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+//配置 ShareSdk
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+}
+
+//配置 ShareSdk
+MobSDK {
+    appKey "2ba455f8d72e0"
+    appSecret "7ded4d7513ceb166eb375fb31d6271c8"
+
+    SMSSDK {
+        //默认使用GUI，若不使用GUI，通过以下开关关闭
+        //gui false
+        //若使用GUI的自动填充验证码功能，需打开此设置
+        autoSMS true
+    }
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            SinaWeibo {
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "http://www.sharesdk.cn"
+                shareByAppClient false
+            }
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            QQ {
+                appId "1109535761"
+                appKey "fhFGrboRLmnTV13a"
+                shareByAppClient true
+            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://mob.com"
+            }
+        }
+    }
+
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api project(path: ':core')
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'androidx.palette:palette:1.0.0'
+}

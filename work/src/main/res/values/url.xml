@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Url_app">http://192.168.2.140:80/Frame_Api/</string>
+    <string name="Url_App_Service">http://47.106.101.44:80/Frame_Api/</string>
+    <string name="Url_signUp">http://47.106.101.44:80/Frame_Api/account/signUpAccount.php</string>
+    <string name="Url_signIn">http://47.106.101.44:80/Frame_Api/account/signInAccount.php</string>
+    <string name="Url_QqSignIn">http://47.106.101.44:80/Frame_Api/account/qq_SignIn.php</string>
+    <string name="Url_PhoneSignIn">http://47.106.101.44:80/Frame_Api/account/phone_SignIn.php</string>
+    <!--上传头像-->
+    <string name="upLoadingImage">http://47.106.101.44:80/Frame_Api/account/account_icon.php</string>
+    <!--获取头像-->
+    <string name="getLoadingImage">http://47.106.101.44:80/Frame_Api/account/account_get_icon.php</string>
+
+    <!--设置喜欢的歌曲-->
+    <string name="setlovesong">http://47.106.101.44:80/Frame_Api/account/love_song.php</string>
+    <!--获取喜欢的歌曲-->
+    <string name="getlovesong">http://47.106.101.44:80/Frame_Api/account/get_love_song.php</string>
+
+    <!--音乐接口-->
+    <string name="music_url">http://api.guaqb.cn/v1/music/</string>
+
+    <!-- banner 轮播图接口-->
+    <string name="banner_qq">https://v1.itooi.cn/tencent/banner</string>
+    <string name="banner_163">https://v1.itooi.cn/netease/banner</string>
+
+
+    <!-- 精选 MV 接口-->
+    <!-- mv排行榜 参数 pageSize条数:默认值30，page分页:0 -->
+    <string name="mv_top">https://v1.itooi.cn/netease/mv/top</string>
+    <!-- mv信息 参数 id:从排行榜中可以获取到 -->
+    <string name="mv_message">https://v1.itooi.cn/netease/mv</string>
+    <!-- mv地址 参数 id:从排行榜中可以获取到 ,quality分辨率:1080-->
+    <string name="mv_url">https://v1.itooi.cn/netease/mvUrl</string>
+
+    <!-- 热门歌单-->
+    <string name="song_list">https://v1.itooi.cn/tencent/songList/hot</string>
+    
+    <!--音乐排行榜-->
+    <string name="music_list">https://api.apiopen.top/musicRankings</string>
+    <!--音乐详情-->
+    <string name="music_details">https://v1.itooi.cn/tencent/song</string>
+
+    <!--qq音乐的mv 信息-->
+    <string name="mv_qq_message">https://v1.itooi.cn/tencent/mv</string>
+    <string name="mv_qq_url">https://v1.itooi.cn/tencent/mvUrl</string>
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dele_song_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#254957"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/delegate_first_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/toolbar_first_back"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="{music-break}"
+                android:textColor="@color/smssdk_white"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/toolbar_first_textview"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:textColor="@color/smssdk_white"
+                android:textSize="20sp" />
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/toolbar_first_more"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/更多"
+                android:textColor="@color/smssdk_white"
+                android:textSize="20sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/dele_song_details_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dele_song_details_flag0"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:background="@drawable/delegate_btn_flag_start" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dele_song_details_flag1"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/delegate_btn_flag_start" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dele_song_details_flag2"
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/delegate_btn_flag_start" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/dele_song_details_start"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+
+                <androidx.appcompat.widget.AppCompatSeekBar
+                    android:id="@+id/dele_song_details_seekbar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:maxHeight="5dp"
+                    android:progressDrawable="@drawable/seekbar_color" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/dele_song_details_end"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="12sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/dele_song_details_order"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{play-order}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="40sp" />
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/dele_song_details_up"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{paly-up}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="40sp" />
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/dele_song_details_pause"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{paly-pause}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="60sp" />
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/dele_song_details_below"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{paly-below}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="40sp" />
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{music-list}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="20sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/dele_song_details_love"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{music-exclusive}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="25sp" />
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/dele_song_details_dowload"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{home-native}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="25sp" />
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/dele_song_details_shard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{paly-share}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="25sp" />
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/dele_song_details_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="{paly-comment}"
+                    android:textColor="@color/smssdk_white"
+                    android:textSize="25sp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
